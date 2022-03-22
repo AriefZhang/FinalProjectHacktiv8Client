@@ -21,7 +21,7 @@ let apiClient = new midtransClient.Snap({
   clientKey : CLIENT_KEY
 });
 
-module.exports = { snap, core };
+// module.exports = { snap, core, apiClient };
 
 //! HIT KE MIDTRANS
 
