@@ -1,0 +1,199 @@
+.sign-up,
+.sign-in {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.loading {
+  margin: 0 auto;
+}
+
+.sign-up > div,
+.sign-in > div {
+  width: 30%;
+  background-color: #1b262c;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.sign-up h1,
+.sign-up h6,
+.sign-up p,
+.sign-in h1,
+.sign-in h6,
+.sign-in p {
+  text-align: center;
+  color: #bbe1fa;
+}
+
+.sign-in label,
+.sign-up label {
+  color: #bbe1fa;
+}
+
+.sign-in a,
+.sign-up a {
+  text-decoration: none;
+  color: #bbe1fa;
+}
+
+.sign-in a:hover,
+.sign-in a:active,
+.sign-up a:hover,
+.sign-up a:active {
+  color: white !important;
+  cursor: pointer;
+}
+
+.sign-up button,
+.sign-in button {
+  width: 100%;
+}
+
+.sign-up button:hover,
+.sign-up button:active,
+.sign-in button:hover,
+.sign-in button:active {
+  cursor: pointer;
+}
+
+/* Style for content */
+
+/* overflow hidden agar scroable */
+
+body {
+  overflow: hidden;
+}
+
+table {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+#user-info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+#user-info img {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+hr {
+  color: white;
+  width: 90%;
+}
+
+#sidebar {
+  background-color: #1b262c;
+  color: white;
+  width: 250px;
+  padding: 20px;
+  height: 100vh;
+}
+
+#sidebar a:hover,
+#sidebar a:active {
+  color: white !important;
+  cursor: pointer;
+}
+
+#sidebar a:focus {
+  color: white;
+}
+
+.nav-title {
+  color: inherit;
+}
+
+.nav-menu {
+  color: #bbe1fa;
+}
+
+#content {
+  overflow-y: auto;
+  width: 100%;
+  padding: 32px;
+  background-color: #d7dfe6;
+  /* background-image: url("./images/wall.jpg");
+  background-position: center;
+  background-size: cover; */
+}
+
+#content h1 {
+  color: #1b262c;
+}
+
+.table .form-select {
+  width: 50%;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: #bbe1fa;
+}
+
+.table button {
+  margin: 0 1px;
+}
+
+#inspection-header,
+#car-header,
+#exterior-header,
+#interior-header,
+#roadtest-header,
+#kolong-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#product-header button,
+#category-header button {
+  height: 50px !important;
+}
+
+/* style form  */
+
+.card {
+  border-radius: 8px;
+  background-color: #1b262c;
+  color: #bbe1fa;
+  padding: 20px;
+}
+
+#product-form button {
+  margin: 0 1px;
+}
+
+/* images */
+
+.images {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background-color: #d7dfe6;
+}
+
+.main img {
+  width: 420px;
+}
+
+.alt {
+  display: flex;
+}
+
+.alt img {
+  width: 150px;
+}
