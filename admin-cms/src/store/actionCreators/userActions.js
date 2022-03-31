@@ -1,6 +1,6 @@
 import { USER_LOGIN, USER_LOGOUT } from "../actionTypes";
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "https://autoclassic-hacktiv8.herokuapp.com";
 
 // User
 export function loginAction(payload) {
@@ -25,7 +25,7 @@ export function loginAction(payload) {
         .then((data) => {
           localStorage.setItem("login", true);
           localStorage.setItem("access_token", data.access_token);
-
+          localStorage.setItem("email", data.email);
           dispatch(userLogin());
           resolve("Login success");
         })

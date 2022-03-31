@@ -6,3 +6,4 @@ export const FETCH_EXTERIORS = "exterior/fetch";
 export const FETCH_INTERIORS = "interior/fetch";
 export const FETCH_ROADTEST = "roadtest/fetch";
 export const FETCH_KOLONG = "kolong/fetch";
+export const FETCH_PAYMENTS = "payment/fetch";

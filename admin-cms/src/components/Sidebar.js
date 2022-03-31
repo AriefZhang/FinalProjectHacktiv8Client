@@ -17,15 +17,8 @@ function Sidebar() {
       className='nav flex-column justify-content-start align-items-start navbar'
     >
       <div id='user-info'>
-        <img
-          className='me-2'
-          src='https://dmrqkbkq8el9i.cloudfront.net/Pictures/1024x536/3/0/2/159302_jubel_crop.jpg'
-          alt=''
-        />
-        <div>
-          <h5>{localStorage.user}</h5>
-          <p>{localStorage.role}</p>
-        </div>
+        <img className='me-2' src='../../logobaru.png' alt='' />
+        <p>{localStorage.email}</p>
       </div>
       <hr />
       <ul className='navbar-nav nav'>
@@ -38,6 +31,11 @@ function Sidebar() {
           <li className='nav-item'>
             <Link to='cars' className='nav-link nav-menu'>
               <i class='fa-solid fa-car'></i>&nbsp; Cars
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='payment' className='nav-link nav-menu'>
+              <i class='fa-solid fa-file-invoice'></i>&nbsp; Payment Status
             </Link>
           </li>
           <li className='nav-item'>

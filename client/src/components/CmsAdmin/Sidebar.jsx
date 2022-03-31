@@ -5,7 +5,7 @@ export default function Sidebar() {
   const [collapseShow, setCollapseShow] = React.useState("hidden");
   return (
     <>
-      <nav className="w-2/12 min-h-screen shadow-xl bg-white flex flex-wrap items-center justify-between relative z-10 py-4 px-6 top-4 border-r">
+      <nav className="w-2/12 min-h-screen shadow-xl bg-white flex flex-wrap items-center justify-between relative z-10 py-4 px-6 border-r">
         <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
           {/* Toggler */}
           <button
@@ -52,47 +52,32 @@ export default function Sidebar() {
                 </div>
               </div>
             </div>
-            {/* Form */}
-            <form className="mt-6 mb-4 md:hidden">
-              <div className="mb-3 pt-0">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="border-0 px-3 py-2 h-12 border border-solid  border-slate-500 placeholder-slate-300 text-slate-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
-                />
-              </div>
-            </form>
             {/* Navigation */}
             <ul className="md:flex-col md:min-w-full flex flex-col list-none">
               <li className="items-center">
                 <Link
                   className="text-blue-500 hover:text-blue-600 font-open-sans py-3 font-bold block"
-                  to="/dashboard"
+                  to="/dealer/dashboard"
                 >
                   <i className="fas fa-tv opacity-75 mr-2 text-sm"></i> Dashboard
                 </Link>
               </li>
 
+
               <li className="items-center">
-                <Link
-                  className="text-slate-700 hover:text-slate-500 font-open-sans py-3 font-bold block"
-                  to="/dashboard/profile"
-                >
-                  <i className="fas fa-user-circle text-slate-400 mr-2 text-sm"></i> Profile Page
-                </Link>
+                <div className="divider"></div>
               </li>
 
               <li className="items-center">
                 <Link
                   className="text-slate-700 hover:text-slate-500 font-open-sans py-3 font-bold block"
-                  to="/dashboard/sell"
+                  to="/dealer/dashboard/sell"
                 >
                   <i className="fas fa-user-circle text-slate-400 mr-2 text-sm"></i> Sell A Car 
                 </Link>
               </li>
 
             </ul>
-            {/* Divider */}
           </div>
         </div>
       </nav>

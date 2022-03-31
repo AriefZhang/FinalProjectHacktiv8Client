@@ -14,6 +14,7 @@ import ExteriorList from "./components/ExteriorList";
 import InteriorList from "./components/InteriorList";
 import RoadTestList from "./components/RoadTestList";
 import KolongList from "./components/KolongList";
+import PaymentList from "./components/PaymentList";
 
 function App() {
   const dispatch = useDispatch();
@@ -53,6 +54,7 @@ function App() {
           <Route path='interior' element={<InteriorList />}></Route>
           <Route path='roadtest' element={<RoadTestList />}></Route>
           <Route path='kolong' element={<KolongList />}></Route>
+          <Route path='payment' element={<PaymentList />}></Route>
           <Route path='register' element={<RegisterAdmin />}></Route>
         </Route>
         <Route

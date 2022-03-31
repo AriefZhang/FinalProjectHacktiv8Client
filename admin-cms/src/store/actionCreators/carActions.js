@@ -1,7 +1,7 @@
 import { FETCH_CARS } from "../actionTypes";
 import axios from "axios";
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "https://autoclassic-hacktiv8.herokuapp.com";
 
 export function fetchCars() {
   return (dispatch) => {
@@ -9,7 +9,7 @@ export function fetchCars() {
       axios
         .get(`${baseUrl}/cars`)
         .then((resp) => {
-          dispatch(fetchCarsAction(resp.data));
+          dispatch(fetchCarsAction(resp.data.rows));
           resolve(resp.data);
         })
         .catch((err) => {

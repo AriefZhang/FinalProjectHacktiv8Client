@@ -1,7 +1,7 @@
 import { FETCH_INTERIORS } from "../actionTypes";
 import axios from "axios";
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "https://autoclassic-hacktiv8.herokuapp.com";
 
 export function fetchInteriors() {
   return (dispatch) => {

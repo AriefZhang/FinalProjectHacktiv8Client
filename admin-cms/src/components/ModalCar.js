@@ -52,16 +52,35 @@ function ModalCar({ car, show, setShow }) {
         <Modal.Body>
           <form onSubmit={carPassedHandler}>
             <div className='mb-3'>
-              <label className='form-label'>Main Inspection status:</label>
-              <select
-                value={passed}
-                onChange={changePassed}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <label className='form-label'>Passed Inspection status:</label>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='passed'
+                  id='passed1'
+                  value='true'
+                  checked={passed === true}
+                  onChange={changePassed}
+                />
+                <label class='form-check-label' for='passed1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='passed'
+                  id='passed2'
+                  value='false'
+                  checked={passed === false}
+                  onChange={changePassed}
+                />
+                <label class='form-check-label' for='passed2'>
+                  False
+                </label>
+              </div>
             </div>
             <button type='submit' className='btn btn-primary'>
               Submit

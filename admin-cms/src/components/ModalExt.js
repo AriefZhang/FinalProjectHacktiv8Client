@@ -150,129 +150,302 @@ function ModalExt({ ext, show, setShow }) {
         </Modal.Header>
         <Modal.Body>
           <form onSubmit={exteriorHandler}>
-            <div className='mb-3'>
-              <label className='form-label'>Chassis Inspection status:</label>
-              <select
-                value={chass}
-                onChange={changeChass}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
+                Chassis Inspection status:
+              </label>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='chass'
+                  id='chass1'
+                  value='true'
+                  checked={chass === true}
+                  onChange={changeChass}
+                />
+                <label class='form-check-label' for='chass1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='chass'
+                  id='chass2'
+                  value='false'
+                  checked={chass === false}
+                  onChange={changeChass}
+                />
+                <label class='form-check-label' for='chass2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
                 Bumper Inspection status: &nbsp;{" "}
               </label>
-              <select
-                value={bump}
-                onChange={changeBump}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='bump'
+                  id='bump1'
+                  value='true'
+                  checked={bump === true}
+                  onChange={changeBump}
+                />
+                <label class='form-check-label' for='bump1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='bump'
+                  id='bump2'
+                  value='false'
+                  checked={bump === false}
+                  onChange={changeBump}
+                />
+                <label class='form-check-label' for='bump2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
                 Lights Inspection status: &nbsp;
               </label>
-              <select
-                value={light}
-                onChange={changeLight}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='light'
+                  id='light1'
+                  value='true'
+                  checked={light === true}
+                  onChange={changeLight}
+                />
+                <label class='form-check-label' for='light1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='light'
+                  id='light2'
+                  value='false'
+                  checked={light === false}
+                  onChange={changeLight}
+                />
+                <label class='form-check-label' for='light2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
                 Roof Inspection status: &nbsp;
               </label>
-              <select
-                value={atap}
-                onChange={changeRoof}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='atap'
+                  id='atap1'
+                  value='true'
+                  checked={atap === true}
+                  onChange={changeRoof}
+                />
+                <label class='form-check-label' for='atap1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='atap'
+                  id='atap2'
+                  value='false'
+                  checked={atap === false}
+                  onChange={changeRoof}
+                />
+                <label class='form-check-label' for='atap2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
                 Spion Inspection status: &nbsp;
               </label>
-              <select
-                value={kacaSpion}
-                onChange={changeSpion}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='kacaSpion'
+                  id='kacaSpion1'
+                  value='true'
+                  checked={kacaSpion === true}
+                  onChange={changeSpion}
+                />
+                <label class='form-check-label' for='kacaSpion1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='kacaSpion'
+                  id='kacaSpion2'
+                  value='false'
+                  checked={kacaSpion === false}
+                  onChange={changeSpion}
+                />
+                <label class='form-check-label' for='kacaSpion2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
                 Wind Shield Inspection status: &nbsp;
               </label>
-              <select
-                value={shield}
-                onChange={changeShield}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='shield'
+                  id='shield1'
+                  value='true'
+                  checked={shield === true}
+                  onChange={changeShield}
+                />
+                <label class='form-check-label' for='shield1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='shield'
+                  id='shield2'
+                  value='false'
+                  checked={shield === false}
+                  onChange={changeShield}
+                />
+                <label class='form-check-label' for='shield2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
                 Side Glass Inspection status: &nbsp;
               </label>
-              <select
-                value={samping}
-                onChange={changeSamping}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='samping'
+                  id='samping1'
+                  value='true'
+                  checked={samping === true}
+                  onChange={changeSamping}
+                />
+                <label class='form-check-label' for='samping1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='samping'
+                  id='samping2'
+                  value='false'
+                  checked={samping === false}
+                  onChange={changeSamping}
+                />
+                <label class='form-check-label' for='samping2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
                 Back Glass Inspection status: &nbsp;
               </label>
-              <select
-                value={belakang}
-                onChange={changeBelakang}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='belakang'
+                  id='belakang1'
+                  value='true'
+                  checked={belakang === true}
+                  onChange={changeBelakang}
+                />
+                <label class='form-check-label' for='belakang1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='belakang'
+                  id='belakang2'
+                  value='false'
+                  checked={belakang === false}
+                  onChange={changeBelakang}
+                />
+                <label class='form-check-label' for='belakang2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
                 Tire Inspection status: &nbsp;
               </label>
-              <select
-                value={ban}
-                onChange={changeBan}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='ban'
+                  id='ban1'
+                  value='true'
+                  checked={ban === true}
+                  onChange={changeBan}
+                />
+                <label class='form-check-label' for='ban1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='ban'
+                  id='ban2'
+                  value='false'
+                  checked={ban === false}
+                  onChange={changeBan}
+                />
+                <label class='form-check-label' for='ban2'>
+                  False
+                </label>
+              </div>
             </div>
             <button type='submit' className='btn btn-primary'>
               Submit
