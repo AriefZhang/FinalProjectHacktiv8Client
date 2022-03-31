@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { createPopper } from "@popperjs/core";
 
-export default function Dropdown({ title }) {
+export default function Dropdown({ title, setLoginBuyer, setLoginDealer }) {
   // dropdown props
   const navigate = useNavigate();
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
@@ -24,7 +24,7 @@ export default function Dropdown({ title }) {
           <div className="relative inline-flex align-middle w-full">
             <button
               className={
-                "text-slate-900 font-bold font-open-sans text-xl py-3 over:border-b hover:border-orange-600 outline-none focus:outline-none ease-linear transition-all duration-150"
+                "text-slate-900 font-bold font-open-sans text-xl py-3 hover:border-b hover:border-orange-600 outline-none focus:outline-none ease-linear transition-all duration-150"
               }
               type="button"
               ref={btnDropdownRef}
@@ -47,20 +47,27 @@ export default function Dropdown({ title }) {
             >
               <button
                 className={
-                  "text-lg py-4 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
+                  "text-lg text-left py-4 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   "text-blueGray-700 hover:bg-yellow-100"
                 }
-                onClick={() => navigate(`/${title.toLowerCase()}/user`)}
+                onClick={() => {
+                  title === "Login"
+                    ? setLoginBuyer(true)
+                    : navigate("/register/user");
+                }}
               >
                 {title}
               </button>
               <button
-                href="#pablo"
                 className={
-                  "text-lg py-4 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
+                  "text-lg text-left py-4 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   "text-blueGray-700 hover:bg-yellow-100"
                 }
-                onClick={() => navigate(`/${title.toLowerCase()}/dealer`)}
+                onClick={() => {
+                  title === "Login"
+                    ? setLoginDealer(true)
+                    : navigate("/register/dealer");
+                }}
               >
                 {`${title} as dealer`}
               </button>
@@ -71,11 +78,3 @@ export default function Dropdown({ title }) {
     </div>
   );
 }
-
-// export default function DropdownRender() {
-//   return (
-//     <>
-//       <Dropdown title="Register"/>
-//     </>
-//   );
-// }

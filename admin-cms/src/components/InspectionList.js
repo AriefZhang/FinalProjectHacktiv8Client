@@ -21,7 +21,7 @@ function InspectionList({ isLoading }) {
       {isLoading ? (
         <Loading type={"spin"} color={"#0E3EDA"} />
       ) : (
-        <table className='table table-dark table-striped'>
+        <table className='table table-light table-striped'>
           <thead>
             <tr>
               <th scope='col'>Id</th>

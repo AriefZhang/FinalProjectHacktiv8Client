@@ -2,7 +2,7 @@ import { FETCH_ROADTEST } from "../actionTypes";
 
 import axios from "axios";
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "https://autoclassic-hacktiv8.herokuapp.com";
 
 export function fetchRoadTest() {
   return (dispatch) => {

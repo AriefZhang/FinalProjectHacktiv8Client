@@ -1,7 +1,7 @@
 import React from "react";
 import TableRow from "./organisms/TableRow";
 
-export default function Table({ cars }) {
+export default function Table({ cars, fetchCars }) {
   return (
     <div className="overflow-x-auto px-4">
       <table className="w-full">
@@ -21,7 +21,7 @@ export default function Table({ cars }) {
         </thead>
         <tbody>
           {cars.map((car, index) => {
-            return <TableRow key={index} car={car} />
+            return <TableRow key={index} car={car} fetchCars={fetchCars} />;
           })}
         </tbody>
       </table>

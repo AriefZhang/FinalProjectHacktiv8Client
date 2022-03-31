@@ -12,13 +12,12 @@ export default function Footer() {
                   href="#"
                   className="text-xl font-bold text-gray-800 hover:text-gray-700"
                 >
-                  Brand
+                  Auto Classic
                 </a>
               </div>
 
               <p className="max-w-md mt-2 text-gray-500">
-                Join 31,000+ other and never miss out on new tips, tutorials,
-                and more.
+                Real men use classic car
               </p>
 
               <div className="flex mt-4 -mx-2">
@@ -87,18 +86,6 @@ export default function Footer() {
                 >
                   Tec
                 </a>
-                <a
-                  href="#"
-                  className="block mt-2 text-sm text-gray-600 hover:underline"
-                >
-                  Music
-                </a>
-                <a
-                  href="#"
-                  className="block mt-2 text-sm text-gray-600 hover:underline"
-                >
-                  Videos
-                </a>
               </div>
 
               <div>
@@ -109,19 +96,13 @@ export default function Footer() {
                   href="#"
                   className="block mt-2 text-sm text-gray-600 hover:underline"
                 >
-                  Mega cloud
+                  Classic Car
                 </a>
                 <a
                   href="#"
                   className="block mt-2 text-sm text-gray-600 hover:underline"
                 >
-                  Aperion UI
-                </a>
-                <a
-                  href="#"
-                  className="block mt-2 text-sm text-gray-600 hover:underline"
-                >
-                  Meraki UI
+                  We only sell classic car
                 </a>
               </div>
 
@@ -142,7 +123,7 @@ export default function Footer() {
 
         <div>
           <p className="text-center text-gray-800">
-            © Brand 2020 - All rights reserved
+            © Auto Classic 2022 - All rights reserved
           </p>
         </div>
       </div>

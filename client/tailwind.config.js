@@ -943,7 +943,8 @@ module.exports = {
       fontFamily: {
         "roboto": ["Roboto", "sans-serif"],
         "lato": ["Lato", "sans-serif"],
-        "open-sans": ["Encode Sans Semi Condensed", "sans-serif"]
+        "open-sans": ["Encode Sans Semi Condensed", "sans-serif"],
+        "encode": ["Encode Sans", "sans-serif"],
       }
     }
   },

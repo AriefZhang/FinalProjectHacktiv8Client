@@ -5,7 +5,7 @@ export default function Feature() {
     <section>
       <div className="container px-42 py-10 mx-auto">
         <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl">
-          explore our awesome <span className="text-blue-500">Components</span>
+          3 Easy way to have your <span className="text-blue-500">dream car</span>
         </h1>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
@@ -28,13 +28,11 @@ export default function Feature() {
             </span>
 
             <h1 className="text-2xl font-semibold text-gray-700 capitalize">
-              Copy & paste components
+              Find your dream car
             </h1>
 
             <p className="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              ab nulla quod dignissimos vel non corrupti doloribus voluptatum
-              eveniet
+              With hundreds of car from every brands and model, Auto Classic become go to web for classic cars
             </p>
 
             <a
@@ -76,13 +74,11 @@ export default function Feature() {
             </span>
 
             <h1 className="text-2xl font-semibold text-gray-700 capitalize">
-              Zero Configrations
+              Choose your payment methods
             </h1>
 
             <p className="text-gray-500 t-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              ab nulla quod dignissimos vel non corrupti doloribus voluptatum
-              eveniet
+              With our hassle-free low installment rate, you can have your dream car without a second thought
             </p>
 
             <a
@@ -124,13 +120,11 @@ export default function Feature() {
             </span>
 
             <h1 className="text-2xl font-semibold text-gray-700 capitalize">
-              Simple & clean designs
+              Enjoy your car!
             </h1>
 
             <p className="text-gray-500 t-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              ab nulla quod dignissimos vel non corrupti doloribus voluptatum
-              eveniet
+              Your car is ready to go
             </p>
 
             <a

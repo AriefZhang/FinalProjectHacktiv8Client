@@ -102,73 +102,170 @@ function ModalInspection({ inspection, show, setShow }) {
         </Modal.Header>
         <Modal.Body>
           <form onSubmit={inspectionHandler}>
-            <div className='mb-3'>
-              <label className='form-label'>Main Inspection status:</label>
-              <select
-                value={main}
-                onChange={changeMain}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+            <div className='mb-3 row'>
+              <label className='form-label col-6'>
+                Main Inspection status:
+              </label>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='main'
+                  id='main1'
+                  value='true'
+                  checked={main === true}
+                  onChange={changeMain}
+                />
+                <label class='form-check-label' for='main1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='main'
+                  id='main2'
+                  value='false'
+                  checked={main === false}
+                  onChange={changeMain}
+                />
+                <label class='form-check-label' for='main2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6 col'>
                 Exterior Inspection status: &nbsp;{" "}
               </label>
-              <select
-                value={exterior}
-                onChange={changeExterior}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='ext'
+                  id='ext1'
+                  value='true'
+                  checked={exterior === true}
+                  onChange={changeExterior}
+                />
+                <label class='form-check-label' for='ext1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='ext'
+                  id='ext2'
+                  value='false'
+                  checked={exterior === false}
+                  onChange={changeExterior}
+                />
+                <label class='form-check-label' for='ext2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6 col'>
                 Interior Inspection status: &nbsp;
               </label>
-              <select
-                value={interior}
-                onChange={changeInterior}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='int'
+                  id='int1'
+                  value='true'
+                  checked={interior === true}
+                  onChange={changeInterior}
+                />
+                <label class='form-check-label' for='int1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='int'
+                  id='int2'
+                  value='false'
+                  checked={interior === false}
+                  onChange={changeInterior}
+                />
+                <label class='form-check-label' for='int2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6 col'>
                 Road test Inspection status: &nbsp;
               </label>
-              <select
-                value={road}
-                onChange={changeRoad}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='road'
+                  id='road1'
+                  value='true'
+                  checked={road === true}
+                  onChange={changeRoad}
+                />
+                <label class='form-check-label' for='road1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='road'
+                  id='road2'
+                  value='false'
+                  checked={road === false}
+                  onChange={changeRoad}
+                />
+                <label class='form-check-label' for='road2'>
+                  False
+                </label>
+              </div>
             </div>
-            <div className='mb-3'>
-              <label className='form-label'>
+            <div className='mb-3 row'>
+              <label className='form-label col-6 col'>
                 Kolong test Inspection status: &nbsp;
               </label>
-              <select
-                value={kolong}
-                onChange={changeKolong}
-                class='form-select'
-                aria-label='Default select example'
-              >
-                <option value='true'>True</option>
-                <option value='false'>False</option>
-              </select>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='kolong'
+                  id='kolong1'
+                  value='true'
+                  checked={kolong === true}
+                  onChange={changeKolong}
+                />
+                <label class='form-check-label' for='kolong1'>
+                  True
+                </label>
+              </div>
+              <div class='form-check col'>
+                <input
+                  class='form-check-input'
+                  type='radio'
+                  name='kolong'
+                  id='kolong2'
+                  value='false'
+                  checked={kolong === false}
+                  onChange={changeKolong}
+                />
+                <label class='form-check-label' for='kolong2'>
+                  False
+                </label>
+              </div>
             </div>
             <button type='submit' className='btn btn-primary'>
               Submit

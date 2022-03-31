@@ -8,7 +8,6 @@ function RegisterAdmin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
-  const [address, setAddress] = useState("");
   const dispatch = useDispatch();
 
   function changeUser(e) {
@@ -31,18 +30,13 @@ function RegisterAdmin() {
     setPhone(value);
   }
 
-  function changeAddress(e) {
-    const { value } = e.target;
-    setAddress(value);
-  }
 
   function registerHandler(e) {
     e.preventDefault();
     const data = {
-      username,
+      name: username,
       email,
       password,
-      address,
       phoneNumber: phone,
     };
 
@@ -50,7 +44,6 @@ function RegisterAdmin() {
       .then((data) => {
         setUsername("");
         setEmail("");
-        setAddress("");
         setPhone("");
         setPassword("");
         Swal.fire({
@@ -69,36 +62,12 @@ function RegisterAdmin() {
         });
       });
 
-    // fetch("http://localhost:3000/users", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(data),
-    // })
-    //   .then((resp) => resp.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //     setUsername("");
-    //     setEmail("");
-    //     setAddress("");
-    //     setPhone("");
-    //     setPassword("");
-    //     Swal.fire({
-    //       position: "top-end",
-    //       icon: "success",
-    //       title: "Register admin success",
-    //       showConfirmButton: false,
-    //       timer: 1500,
-    //     });
-    //   })
-    //   .catch((err) => console.log(err));
+    
   }
 
   function cancelRegister() {
     setUsername("");
     setEmail("");
-    setAddress("");
     setPhone("");
     setPassword("");
   }
@@ -161,18 +130,6 @@ function RegisterAdmin() {
             id='phone'
             required
           />
-        </div>
-        <div className='mb-3 row'>
-          <label htmlFor='address' className='form-label col-2'>
-            Address:
-          </label>
-          <textarea
-            value={address}
-            onChange={changeAddress}
-            id='address'
-            className='form-control col'
-            style={{ height: 100 }}
-          ></textarea>
         </div>
         <div className='d-flex justify-content-end'>
           <button onClick={cancelRegister} className='btn btn-secondary mx-1'>
